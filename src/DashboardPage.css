@@ -1,0 +1,31 @@
+.dashboard-container {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.highlight {
+  color: #3498db;
+}
+
+.dashboard-links {
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+
+.dashboard-link {
+  background-color: #3498db;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.dashboard-link:hover {
+  background-color: #2980b9;
+}
+
+  

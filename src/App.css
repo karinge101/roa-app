@@ -1,0 +1,248 @@
+/* App Container */
+.app-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #f9f9f9;
+  font-family: Arial, sans-serif;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #2c3e50;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.burger {
+  font-size: 2rem;
+  color: white;
+  cursor: pointer;
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.welcome-text {
+  color: white;
+  font-weight: bold;
+}
+
+.logout-btn {
+  background-color: #e74c3c;
+  border: none;
+  padding: 10px 15px;
+  color: white;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.logout-btn:hover {
+  background-color: #c0392b;
+}
+
+/* Side Menu */
+.side-menu {
+  position: fixed;
+  top: 0;
+  left: -250px;
+  width: 220px;
+  height: 100vh;
+  background-color: #34495e;
+  padding-top: 60px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-left: 20px;
+  transition: left 0.3s ease;
+  z-index: 1000;
+}
+
+.side-menu.open {
+  left: 0;
+}
+
+.side-menu a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.side-menu a:hover {
+  text-decoration: underline;
+}
+
+/* Section container (page body) */
+.section-container {
+  max-width: 800px;
+  margin: 2rem auto;
+  background: #ffffff;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Forms */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+input, textarea, select, button {
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+}
+
+button {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.success-message {
+  background-color: #d4edda;
+  color: #155724;
+  padding: 12px;
+  border-radius: 6px;
+  margin-bottom: 15px;
+  text-align: center;
+  font-weight: bold;
+}
+
+
+button:hover {
+  background-color: #2980b9;
+}
+
+/* Headings */
+h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+/* Dashboard */
+.dashboard-page {
+  padding: 20px;
+  text-align: center;
+}
+
+.dashboard-page h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.dashboard-page p {
+  font-size: 1.2rem;
+  color: #555;
+}
+
+
+/* Responsive - Tablet */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: row;
+  }
+
+  .section-container {
+    margin: 1rem;
+    padding: 1rem;
+  }
+
+  .dashboard-page h1 {
+    font-size: 2rem;
+  }
+
+  .dashboard-page p {
+    font-size: 1rem;
+  }
+
+  input, textarea, select, button {
+    font-size: 0.95rem;
+    padding: 8px;
+  }
+
+  .profile-dashboard-pic {
+    width: 90px;
+    height: 90px;
+  }
+}
+
+/* Responsive - Mobile */
+@media (max-width: 480px) {
+  .section-container {
+    margin: 0.5rem;
+    padding: 0.8rem;
+  }
+
+  .dashboard-page h1 {
+    font-size: 1.7rem;
+  }
+
+  .dashboard-page p {
+    font-size: 0.95rem;
+  }
+
+}
+
+.dashboard-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 30px;
+  align-items: center;
+}
+
+.dashboard-button {
+  padding: 12px 20px;
+  background-color: #3498db;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 8px;
+  width: 80%;
+  max-width: 300px;
+  text-align: center;
+}
+
+.dashboard-button:hover {
+  background-color: #2980b9;
+}
+
+/* Progress Bar */
+.progress-bar {
+  width: 100%;
+  background-color: #dcdcdc;
+  height: 8px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.progress {
+  height: 8px;
+  background-color: #3498db;
+  border-radius: 5px;
+  transition: width 0.3s ease;
+}
+
+.dashboard-button {
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+}
+
+button, .dashboard-button {
+  font-size: 1.05rem;
+}
